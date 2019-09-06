@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> my first angular</title>
-    <link href="style.css" rel="stylesheet" type="text/css"> 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js">
-    </script>
-    <script src="app.js"></script>
+    <title> my first angular app</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+    a{
+        background-color:darkolivegreen;
+        color:white;
+        padding:2%;
+        
+    }
+    a:hover{
+        background-color:cadetblue;   
+    }
+    .navbar{
+        width:100%;
+        background-color:darkolivegreen;
+        padding-right:2%;
+        padding-top:2%;
+        padding-bottom:2%;
+    }
+    </style> 
 </head>
-<body ng-app="mygame" ng-controller="mycontrol">
-<center><div><h1>{{demo}}</h1><hr></hr></div><br><br>
-<div class="maindiv">
-    <div> Gusses left   :  {{gusses}} </div><br>
-    <div>Incorrect Gusses Made : <spam ng-repeat="letter in incorrectletterschoosen" >{{letter}}</spam> </div><br>
-    <div>Correct Gusses Made  : <spam ng-repeat="letter in correctletterschoosen" >{{letter}}</spam> </div><br>
-    <div> You have to guss this word : {{displayword}}</div><br>
-    <div>
-        Enter your gussing letter <input type="text" name="letter" ng-model="input.letter">
-        <button ng-click="letterchoosen()">Submit</button>
-        <br><br>
-        <div> Hint : {{hintname}}</div><br>
-    </div>
-    <h2>{{msg}}</h2>
-</div>
-</center>
+<body>
+   <center><h2>Welcome to My First Angular Application</h2></center><hr></hr>
+    <div class="navbar"><a href="calc.html">CALCULATOR</a><a href="game.html">GAMES</a></div>
 </body>
 </html>

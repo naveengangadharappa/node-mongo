@@ -1,7 +1,7 @@
 var app=angular.module("mygame",[]);
 app.controller("mycontrol",['$scope',function($scope){
-$scope.demo="This is demo application on angular js"
-var words=["elephant","monkey","rabbit","gorilla","peacock","butterfly","housefly","aeroplane","banana","rose","jamoon","lover","father",,"mother","pubge","cricket","ludo"];
+$scope.demo="This is demo Game application on angular js"
+var words=["elephant","monkey","rabbit","gorilla","peacock","butterfly","housefly","aeroplane","banana","rose","jamoon","lover","father",,"mother","pubg","cricket","ludo"];
 $scope.incorrectletterschoosen=[];
 $scope.correctletterschoosen=[];
 $scope.gusses=6;
