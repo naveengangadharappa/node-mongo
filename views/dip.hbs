@@ -1,0 +1,27 @@
+
+<table >
+    <thead >  
+        <tr>
+            <th>Student-Reg</th>
+            <th>Student-Name</th>
+            <th>Student-Gender</th>
+            <th>Student-D-O-B</th>
+            <th>Student-email</th>
+            <th>Student-Address</th>
+            <th>delete</th>
+        </tr>
+    </thead>
+    {{#each data}}
+    <tbody >
+        <tr>
+        <td>{{this.s_reg}}</td>
+         <td>{{this.s_name}}</td> 
+         <td>{{this.s_gender}}</td>
+         <td>{{this.s_dob}}</td> 
+         <td>{{this.s_email}}</td>
+         <td>{{this.s_country}}, {{this.s_state}}, {{this.s_district}}, {{this.s_postal}}</td> 
+         <td> <a href="/delete/{{this.id}}" onclick="return confirm('Are you shure to delete this Student ??');" ><b>Delete</b></a></td> 
+        </tr>
+    </tbody> 
+    {{/each}}   
+</table>
